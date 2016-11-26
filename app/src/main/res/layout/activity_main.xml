@@ -1,15 +1,20 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.jiuzhang.guojing.awesomeresume.MainActivity">
+
+
+
 
     <!--
         TODO 1: Add TextView
         Add TextView with id "name" here.
         Set its text to whatever you want.
     -->
+
 
     <!--
         TODO 2: Add ImageButton
@@ -44,6 +49,65 @@
 
         How to position user_picture to the right most? Check out "layout_weight" in the slides!
     -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:text="Ruochen Liao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textSize="23sp"
+                     />
+
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_create_black_24px"
+                    android:id="@+id/edit_basic_info"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="ruochenl@usc.edu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+               />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/head"
+            android:id="@+id/user_picture"
+             />
+
+    </LinearLayout>
 
     <!--
         TODO 6: UI polish!
